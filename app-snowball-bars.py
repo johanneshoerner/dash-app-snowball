@@ -9,6 +9,8 @@ import numpy as np
 
 app = Dash(__name__)
 
+server = app.server
+
 # assume you have a "long-form" data frame
 # see https://plotly.com/python/px-arguments/ for more options
 DS = xr.open_dataset("data/ape_5000_55_0S_atm_2d_ml.ym.zm.nc",decode_times=False)
