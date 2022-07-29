@@ -38,7 +38,7 @@ df = pd.DataFrame({
 
 
 fig = px.bar(df, x="lat", y="thickness", color="var", range_y=(0,100), title="Snowball test", animation_frame="time")
-fig.layout.updatemenus[0].buttons[0].args[1]["frame"]["duration"] = 20
+fig.layout.updatemenus[0].buttons[0].args[1]["frame"]["duration"] = 10
 
 app.layout = html.Div(children=[
     html.H1(children='Snowball Test'),
